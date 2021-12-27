@@ -190,6 +190,7 @@ class Alpha158(DataHandlerLP):
         return self.parse_config_to_fields(conf)
 
     def get_label_config(self):
+        # TODO: How does this LABEL0 recognized in processor? Can we simply add extra LABEL{i}?
         return (["Ref($close, -2)/Ref($close, -1) - 1"], ["LABEL0"])
 
     @staticmethod
