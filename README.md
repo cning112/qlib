@@ -191,10 +191,10 @@ Load and prepare data by running the following code:
 
   ```bash
   # get 1d data
-  python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/qlib_cn_1d --region cn
+  python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_1d --region cn
 
   # get 1min data
-  python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/qlib_cn_1min --region cn --interval 1min
+  python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_1min --region cn --interval 1min
 
   ```
 
@@ -240,7 +240,7 @@ We recommend users to prepare their own data if they have a high-quality dataset
   from qlib.constant import REG_CN
 
   # Initialization
-  mount_path = "~/.qlib/qlib_data/qlib_cn_1d"  # target_dir
+  mount_path = "~/.qlib/qlib_data/cn_1d"  # target_dir
   qlib.init(mount_path=mount_path, region=REG_CN)
 
   # Get stock data by Qlib
