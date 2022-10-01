@@ -36,7 +36,7 @@ if __name__ == "__main__":
             },
         },
         "strategy": {
-            "class": "ExhaustFundTopkDropoutStrategy",
+            "class": "TopkDropoutStrategy",
             "module_path": "qlib.contrib.strategy.signal_strategy",
             "kwargs": {
                 "signal": (model, dataset),
